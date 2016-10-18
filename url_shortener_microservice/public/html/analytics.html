@@ -1,0 +1,23 @@
+{{>header}}
+<form action="analytics" method="post">
+  <input type="text" name="shortName" placeholder="Enter short URL...">
+  <input type="submit" value="Submit">
+</form>
+
+{{#by_browser}}
+<p>Expansions by browser for {{short}}:</p>
+<table>
+<tr>{{#browsers}}<th>{{.}}</th>{{/browsers}}</tr>
+<tr>{{#counts}}<td>{{.}}</td>{{/counts}}</tr>
+</table>
+{{/by_browser}}
+
+{{#by_time}}
+<p>Expansions by days of last week for {{short}}:</p>
+<table>
+<tr>{{#days}}<th>{{.}}</th>{{/days}}</tr>
+<tr>{{#counts}}<td>{{.}}</td>{{/counts}}</tr>
+</table>
+{{/by_time}}
+
+{{>footer}}

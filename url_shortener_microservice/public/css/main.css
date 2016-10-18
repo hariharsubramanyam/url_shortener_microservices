@@ -1,0 +1,25 @@
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+table, tr, td, th {
+  border-collapse: collapse;
+  font-size: 12px;
+  border: 1px solid #ddd;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: brown;
+}
+
+table th {
+  color: #bbb;
+  }
+
+.error {
+  color: red;
+}
